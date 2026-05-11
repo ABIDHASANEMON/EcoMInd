@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Safe Zone"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <EditText
+        android:id="@+id/et_zone_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Zone Name (e.g., Home)"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btn_use_current_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Use My Current Location"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/et_latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Latitude (auto-filled)"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/et_longitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longitude (auto-filled)"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/et_radius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Radius in meters (default 100)"
+        android:inputType="number"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_border"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btn_save_zone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Safe Zone"
+        android:backgroundTint="@color/safe_green"
+        android:textColor="@android:color/white"
+        android:padding="12dp" />
+
+</LinearLayout>

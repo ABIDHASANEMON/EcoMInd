@@ -1,0 +1,69 @@
+plugins {
+    id 'com.android.application'
+    // Add the Google services Gradle plugin
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.memorymate'
+    compileSdk 34  // Use 34 for better compatibility (or keep 36 if it works)
+
+    defaultConfig {
+        applicationId "com.memorymate"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // Room Database
+    implementation "androidx.room:room-runtime:2.6.1"
+    annotationProcessor "androidx.room:room-compiler:2.6.1"
+
+    // Location Services
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+
+    // WorkManager for background tasks
+    implementation "androidx.work:work-runtime:2.9.0"
+
+    // For circular images
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // For permissions
+    implementation 'com.karumi:dexter:6.2.3'
+
+    // Firebase BoM (Bill of Materials)
+    implementation platform('com.google.firebase:firebase-bom:34.11.0')
+
+    // Firebase products
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.firebase:firebase-storage'
+
+    // For better UI
+    implementation 'com.airbnb.android:lottie:6.4.0'
+
+    // Google Maps
+    implementation 'com.google.android.gms:play-services-maps:18.2.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+}

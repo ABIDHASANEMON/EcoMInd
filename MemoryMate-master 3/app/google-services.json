@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "862246915738",
+    "project_id": "memorymate-593dc",
+    "storage_bucket": "memorymate-593dc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862246915738:android:c7241f20f077c7b6209923",
+        "android_client_info": {
+          "package_name": "com.memorymate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBINcL_Q5fZNQxN6nhVTw3r_OaXmosVNfM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
